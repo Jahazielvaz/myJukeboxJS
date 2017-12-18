@@ -1,0 +1,61 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+#juke-wrapper{
+  width: 500px;
+  height: 400px;
+  background: darkgrey;
+  border-radius: 30px;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+#display{
+  width: 450px;
+  height: 200px;
+  background: black;
+  color: white;
+  font-size: 30px;
+  border-radius: 30px;
+  border: 4px solid lightgrey;
+  margin: auto;
+}
+
+#upper-buttons{
+  overflow: auto;
+}
+
+#lower-buttons{
+  overflow: auto;
+}
+
+.buttons1{
+  display: block;
+  width: 150px;
+  height: 40px;
+  background: black;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-weight: bold;
+  color: red;
+  margin: 10px 0;
+  float: left;
+}
+
+.buttons2{
+  display: block;
+  width: 150px;
+  height: 40px;
+  background: black;
+  border: 2px solid blue;
+  border-radius: 150px;
+  font-weight: bold;
+  color: blue;
+  float: left;
+}
