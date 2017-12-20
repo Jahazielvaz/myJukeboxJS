@@ -43,7 +43,7 @@
   <body>
     <!-- BASIC HTML ELEMENTS SECTION -->
 
-      <div id= "div1">Play</div>
+      
       <!-- <div id= "div2"></div>
       <div id= "div3"></div>
       <div id= "div4"></div>
@@ -55,7 +55,7 @@
 
 
 
-
+  <audio src="November-rain-solo.mp3" id="songs"></audio>
 
 
 
@@ -78,16 +78,25 @@
   -->
 
 <!-- BEGINNING OF AUDIO PRACTICE SECTION -->
-  <audio src="" id="audioPlayer">
+  <!-- <audio src="" id="audioPlayer">
       Sorry, your browser doesn't support html5!
-  </audio>
+  </audio> -->
 
-  <ul id="playlist">
-    <li><a href="greenChildren.mp3" class="current">Everytime we touch</a></li>
-    <li><a href="hello.mp3">Hello</a></li>
-    <li><a href="shake-it-off.mp3">Shake it off</a></li>
-  </ul>
+  <!-- <ul id="playlist">
+    <li><a href="greenChildren.mp3" class="current" id="gc">Green Children - Shine</a></li>
+    <li><a href="Augustana-boston.mp3">Augustana - Boston</a></li>
+    <li><a href="November-rain-solo.mp3">November Rain - Solo</a></li>
+  </ul> -->
 
+  <!-- <audio src="greenChildren.mp3" id="audioPlayer">
+    <source src="greenChildren.mp3" type="audio/mp3" id="green-children">
+    <source src="Augustana-boston.mp3" type="audio/mp3" id="augustana">Augustana - Boston
+    <source src="November-rain-solo.mp3">November Rain - Solo
+  </audio> -->
+
+  <select>
+    <option value="songName.mp3"></option>
+  </select>
 
   <!-- THIS IS MY JAVASCRIPT SECTION -->
   <script>
@@ -103,13 +112,11 @@
 
     //EVENT LISTENER PRACTICE SECTION
     //1- create a click event and make an alert.
-      var greenbtn = document.querySelector("#div1");
+      var greenbtn = document.querySelector("#audioPlayer");
 
-      greenbtn.onclick = function(){
-
+      function playSong(){
+          greenbtn.play();
        };
-
-       $("#div1").
 
   </script>
   </body>
