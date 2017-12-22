@@ -5,26 +5,35 @@
   list-style: none;
 }
 
-
+/*  JUKEBOX */
 #juke-wrapper{
   width: 500px;
   height: 400px;
-  background: darkgrey;
+  background: url("rock6.jpg") top center;
+  background-size: cover;
   border-radius: 30px;
   padding: 10px;
   margin: auto;
   text-align: center;
+  border: 7px double lightgrey;
+  color: white;
+  text-shadow: 4px 4px 4px black;
 }
 
 #display{
   width: 450px;
   height: 200px;
   background: black;
-  color: white;
-  font-size: 30px;
+  color: blue;
+  font-size: 20px;
   border-radius: 30px;
   border: 4px solid lightgrey;
   margin: auto;
+  opacity: .9;
+}
+
+h2#song-name{
+  margin: 30px auto;
 }
 
 #upper-buttons{
@@ -66,4 +75,11 @@
   float: left;
   box-shadow: 2px 2px 4px;
   margin: 0 5px;
+}
+   /* END OF JUKEBOX */
+
+
+   /* PLAYLISTS */
+#playlists-container{
+  background: darkgrey;
 }

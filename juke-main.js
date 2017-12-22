@@ -37,8 +37,9 @@ var novemberRain = document.querySelector("#novemberRain");
 var greenChildren = document.querySelector("#greenChildren");
 var augustana = document.querySelector("#augustana");
 
+var songs = [greenChildren, augustana, novemberRain];
+
 playButton.addEventListener("click", function(){
-  var songs = [greenChildren, augustana, novemberRain];
   for(i = 0; i < songs.length; i++){
       songs[i].play();
   }
@@ -48,6 +49,7 @@ var newSong = new Jukebox();
 
 newSong.songFeeder(playButton);
 
+var lp = document.getElementById("lp");
 
 //
 // playButton.addEventListener("click", function(){
