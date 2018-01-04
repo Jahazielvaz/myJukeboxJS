@@ -6,63 +6,72 @@
     <link rel="stylesheet" href="juke-main.css">
   </head>
   <body>
-    <div id="page-wrapper">
+    <div id="page-wrapper" class="clearfix">
       <!-- JUKEBOX BODY -->
-      <div id="juke-wrapper">
-        <h1>JUKEBOX</h1>
+      <div id="wrapper-main">
+        <div id="juke-wrapper" class="items">
+          <h1>JUKEBOX</h1>
 
-      <!-- DISPLAY -->
+        <!-- DISPLAY -->
 
-        <div id="display">
-          <h2 id="song-name">HELLO WORLD</h2> <!-- Here's where the songs will be displayed -->
+          <div id="display">
+            <h2 id="song-name"></h2> <!-- Here's where the songs will be displayed -->
+          </div>
+
+        <!-- JUKEBOX CONTROLS -->
+          <section id="upper-buttons">
+              <button class="buttons1" type="button" id="play">Play</button>
+              <button class="buttons1" type="button" id="pause">PAUSE</button>
+              <button class="buttons1" type="button" id="fast-forward">FF</button>
+              <button class="buttons1" type="button" id="rewind">Rewind</button>
+              <button class="buttons1" type="button" id="stop">Stop</button>
+          </section>
+
+          <section id="lower-buttons">
+            <button class="buttons2" type="button" id="shuffle">Shuffle</button>
+            <button class="buttons2" type="button" id="playlists">Playlists</button>
+          </section>
+
+
+
         </div>
+        <!-- END OF JUKEBOX -->
 
-      <!-- JUKEBOX CONTROLS -->
-        <section id="upper-buttons">
-            <button class="buttons1" type="button" id="play">Play</button>
-            <button class="buttons1" type="button" id="pause">PAUSE</button>
-            <button class="buttons1" type="button" id="fast-forward">FF</button>
-            <button class="buttons1" type="button" id="rewind">Rewind</button>
-            <button class="buttons1" type="button" id="stop">Stop</button>
+        <!-- PLAYLISTS -->
+        <section id= "current-playlist" class= "items">
+          <h2 id ="testing"></h2>
         </section>
-
-        <section id="lower-buttons">
-          <button class="buttons2" type="button" id="shuffle">Shuffle</button>
-          <button class="buttons2" type="button" id="playlists">Playlists</button>
-        </section>
-
-
-
       </div>
-      <!-- END OF JUKEBOX -->
 
-      <!-- PLAYLISTS -->
       <div id="playlists-container">
-        <section id= "current-playlist">
-
-        </section>
-
-        <section id= "playlists-list">
-          <ul>
-            <li id="current-playlist">
+          <aside id="rock">
               <h2>Rock</h2>
-              <audio src="November-rain-solo.mp3" id="novemberRain"></audio>
-            </li>
-            <li id="pop">
-              <h2>Pop</h2>
-              <audio src="Augustana-boston.mp3" id="augustana"></audio>
-            </li>
-            <li id="indie">
-              <h2>Indie</h2>
-              <audio src="greenChildren.mp3" id="greenChildren"></audio>
-              <audio src="oneMoreLight-lp.mp3" id="lp"></audio>
-            </li>
-          </ul>
-        </section>
+              <a href= "November-rain-solo.mp3">Guns n Roses - November Rain<audio src="November-rain-solo.mp3" id="novemberRain"></audio></a><br>
+              <!-- <a href= "paramore-the-only-exeption.mp3">Paramore - The Only Exception<audio src="paramore-the-only-exception.mp3" id="paramore"></audio></a><br> -->
+            <a href= "cranberries-zombie.mp3">The Cranberries - Zombie<audio src="cranberries-zombie.mp3" id="cranberries"></audio></a>
+          </aside>
+
+          <aside id="pop">
+            <h2>Pop</h2>
+          <a href= "syml-where's-my-love.mp3">Syml - Where's My Love<audio src="syml-where's-my-love.mp3" id="syml"></audio></a><br>
+            <a href= "ed-sheeran-perfect.mp3">Ed Sheeran - Perfect<audio src="ed-sheeran-perfect.mp3" id="perfect"></audio></a><br>
+            <a href= "Augustana-boston.mp3">Augustana - Boston<audio src="Augustana-boston.mp3" id="augustana"></audio></a>
+          </aside>
+
+          <aside id="indie">
+            <h2>Indie</h2>
+            <a href= "greenChildren.mp3">Green Children - Dreamers<audio src="greenChildren.mp3" id="greenChildren"></audio></a><br>
+            <a href= "oneMoreLight-lp.mp3">Linkin Park - One More Light<audio src="oneMoreLight-lp.mp3" id="lp"></audio></a><br>
+            <a href= "disney-love-medley.mp3">Kirstin Maldonado - Disney Love Medley<audio src="disney-love-medley.mp3" id="disney-love-med"></audio></a><br>
+            <a href="river-flow-in-you.mp3">Yiruma - River Flows In You <audio src="river-flows-in-you.mp3" id="riverFlows"></audio></a>
+        </aside>
       </div>
 
       <!-- END OF PAGE -->
     </div>
     <script src="juke-main.js" async></script>
+    <script src="playlists.js"></script>
+    <script src="audioControls.js"></script>
+
   </body>
 </html>
