@@ -4,14 +4,21 @@ var playlistDisplay = document.getElementById("current-playlist");
 // // playlistDisplay.appendChild(pop);
 // playlistDisplay.appendChild(indie);
 
-var allLists = [rock, pop, indie];
+var allLists = [pop, indie, rock];
 
-function listIterations(){
-  for(i = 0; i < allLists.length; i++){
-    playlistDisplay.appendChild(allLists[i]);
-  }
-}
-playlists.addEventListener("click", listIterations);
+// function listIterations(){
+//   // for(i = 0; i < allLists.length; i++){
+//   //   playlistDisplay.appendChild(allLists[0]);
+//   // }
+//
+// }
+
+
+
+playlists.addEventListener("click", function(){
+  playlistDisplay.appendChild(allLists[0])
+  allLists.shift();
+});
 
 
 
