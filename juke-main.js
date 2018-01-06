@@ -1,37 +1,12 @@
-// var song = new song({
-//   urls: ["greenChildren.mp3"]
-// }).play();
 
-// document.getElementById("play").addEventListener(click,)
-
-// (function(exports){
-//
-//
-//
-//
-//
-// })(this);
-
-//MAIN CONSTRUCTOR
-// function Jukebox(pause, ff, rewind, stop){
-//   this.play = [];
-//   this.pause = pause;
-//   this.ff = ff;
-//   this.rewind = rewind;
-//   this.stop = stop;
-// };
-
-
-//PLAY BUTTON
-// Jukebox.prototype.songFeeder = function(addSong){
-//   var song = new Audio(addSong);
-//   this.play.push(song);
-// };
+//JUKEBOX
+var jukeWrapper = document.getElementById("juke-wrapper");
+var jukeDisplay = document.getElementById("song-name");
 
 //JUKE BUTTONS
 var playButton = document.getElementById("play");
 var pauseButton = document.getElementById("pause");
-// var ffButton = document.getElementById("fast-forward");
+var ffButton = document.getElementById("fast-forward");
 var rewind = document.getElementById("rewind");
 var stop = document.getElementById("stop");
 
@@ -64,23 +39,20 @@ var rock = document.getElementById("rock");
 var pop = document.getElementById("pop");
 var indie = document.getElementById("indie");
 
+//Reset button
+
+
 
 
 playButton.addEventListener("click", function(){
   for(i = 0; i < songs.length; i++){
       songs[i].play();
   }
-}); //I don't know how to make the iterations count as each song finishes.
-//SONG BANK
-// var newSong = new Jukebox();
-
-// newSong.songFeeder(playButton);
-//
-// var lp = document.getElementById("lp");
+});
 
 
 
-//PRACTICE SECTION
+//UNUSED CODE TO CHECK LATER
 
 // var sample1 = document.createElement("p");
 // var sample2 = document.createTextNode("This is just a sample text")
@@ -89,9 +61,43 @@ playButton.addEventListener("click", function(){
 // var sample3 = document.getElementById("temp");
 // sample3.appendChild(sample1);
 
+//I don't know how to make the iterations count as each song finishes.
+//SONG BANK
+// var newSong = new Jukebox();
+
+// newSong.songFeeder(playButton);
+//
+// var lp = document.getElementById("lp");
+
+// var song = new song({
+//   urls: ["greenChildren.mp3"]
+// }).play();
+
+// document.getElementById("play").addEventListener(click,)
+
+// (function(exports){
+//
+//
+//
+//
+//
+// })(this);
+
+//MAIN CONSTRUCTOR
+// function Jukebox(pause, ff, rewind, stop){
+//   this.play = [];
+//   this.pause = pause;
+//   this.ff = ff;
+//   this.rewind = rewind;
+//   this.stop = stop;
+// };
 
 
-
+//PLAY BUTTON
+// Jukebox.prototype.songFeeder = function(addSong){
+//   var song = new Audio(addSong);
+//   this.play.push(song);
+// };
 
 
 

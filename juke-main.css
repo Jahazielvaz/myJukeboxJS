@@ -12,7 +12,6 @@
 
 #wrapper-main{
   max-width: 1000px;
-  border: 2px solid blue;
   margin: auto;
   overflow: auto;
 }
@@ -35,12 +34,12 @@
   background-size: cover;
   border-radius: 30px;
   padding: 10px;
-  /*margin: 0px auto;*/
   text-align: center;
-  border: 7px double lightgrey;
+  border: 7px double blue;
   color: white;
   text-shadow: 4px 4px 4px black;
-  float: left;
+  display: inline-block;
+  margin-left: 200px;
 }
 
 a{
@@ -109,7 +108,7 @@ h2#song-name{
 
    /* PLAYLISTS */
 #playlists-container{
-
+  display: none;
 
 }
 
@@ -126,8 +125,9 @@ h2#song-name{
   /*margin: 15px 0;*/
 }
 
-#current-playlist aside{
+#current-playlist{
   margin: 20px;
+  display: none;
 }
 
 #playlists-container ul{
